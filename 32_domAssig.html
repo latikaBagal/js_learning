@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise time!</title>
+</head>
+<body>
+   <main>
+    <div id="overView">
+        <h1> Html and Javascript are crucial technologies </h1>
+       <p>The web would not work without them...</p>
+    </div>
+    <div >
+  <ul>
+    <li>Flexible</li>
+    <li id="liElement">Available</li>
+    <li>Magical</li>
+  </ul>
+    </div>
+   </main>
+   <script>
+    console.log("Mainheading should store the <h1> element");
+    const mainHading=document.querySelector("h1");
+    console.log(mainHading);
+   console.log("-----------------------------------------------------------");
+    console.log("Secondadvantage should store the second(!) <li> element");
+    const liSecondElement=document.querySelectorAll("#liElement");
+    console.log(liSecondElement);
+    for (const element of liSecondElement) {
+      console.log(element.innerHTML);  
+    }
+   console.log("-------------------------------------------------------------");
+    console.log("advDiv should store the <div> with the id ");
+    const liStItem=document.querySelectorAll("li");
+    console.log(liStItem);
+    for (const element of liStItem) {
+      console.log(element.innerHTML);  
+    }
+   </script>
+</body>
+</html>
